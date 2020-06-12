@@ -1,0 +1,15 @@
+/* body{
+    display: none;
+} */
+main article form div aside:nth-child(2){
+    display: none;
+}
+main article form div aside{
+    width: 99%;
+    margin-top: 2em;
+}
+main article form div aside:nth-last-of-type(2) label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

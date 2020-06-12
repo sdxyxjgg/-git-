@@ -1,0 +1,56 @@
+main article form div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+main article form div aside{
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main article form div aside:nth-child(2){
+    width: 2%;
+    height: auto;
+    background-color: #fff;
+    padding: auto;
+    box-sizing: border-box;
+}
+main article form div aside:nth-last-child(1){
+    width: 100%;
+    margin-top: 1em;
+}
+main article form div aside button{
+    width: 80%;
+    height: 50px;
+    border: 1px #ccc solid;
+    background: transparent;
+    outline: none;
+    border-radius: 25px;
+    color: white;
+
+}
+main article form div aside span{
+    width: 100%;
+    text-align: center;
+}
+main article form div aside label{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 2em;
+}
+main article form div aside:nth-last-of-type(2) label{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+main article form div aside label input{
+    width: 100%;
+}

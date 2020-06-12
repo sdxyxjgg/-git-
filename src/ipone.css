@@ -1,0 +1,8 @@
+main article{
+    width: 90vw;
+    box-shadow: 0 0 20px black;
+    background-color: #333;
+    border-radius: 1em;
+    padding: 2%;
+    box-sizing: border-box;
+}

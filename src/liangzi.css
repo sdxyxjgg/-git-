@@ -1,0 +1,138 @@
+.pretty{
+    text-decoration: none;
+    color: rgb(63, 240, 231);
+    position: relative;
+    animation: run1 3s infinite forwards;;
+}
+.pretty::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgb(211, 248, 78);
+    /* color: transparent; */
+    /* background: linear-gradient(); */
+    -webkit-mask: linear-gradient(to right,transparent,transparent,transparent,transparent,blue);
+    z-index: 5;
+    animation: run2 3s infinite forwards;;
+}
+.pretty::before{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    color: rgb(243, 94, 211);
+    /* color: transparent; */
+    /* background: linear-gradient(); */
+    -webkit-mask: linear-gradient(to right,transparent,transparent,transparent,blue,transparent);
+    z-index: 4;
+    animation: run3 3s infinite forwards;;
+}
+.prettycopy{
+    display: block;
+}
+.prettycopy::after{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    color: rgb(250, 131, 176);
+    /* color: transparent; */
+    /* background: linear-gradient(); */
+    -webkit-mask: linear-gradient(to right,transparent,transparent,blue,transparent,transparent);
+    z-index: 3;
+    animation: run4 3s infinite forwards;;
+}
+.prettycopy::before{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    color: rgb(144, 120, 252);
+    /* color: transparent; */
+    /* background: linear-gradient(); */
+    -webkit-mask: linear-gradient(to right,transparent,blue,transparent,transparent,transparent);
+    z-index: 2;
+    animation: run5 3s infinite forwards;;
+}
+@keyframes run1{
+    20%{
+        color: rgb(63, 240, 231);
+    }
+    40%{
+        color: rgb(211, 248, 78);
+    }
+    60%{
+        color: rgb(243, 94, 211);
+    }
+    80%{
+        color: rgb(250, 131, 176);
+    }
+    to{
+        color: rgb(144, 120, 252);
+    }
+}
+@keyframes run2{
+    40%{
+        color: rgb(63, 240, 231);
+    }
+    60%{
+        color: rgb(211, 248, 78);
+    }
+    80%{
+        color: rgb(243, 94, 211);
+    }
+    100%{
+        color: rgb(250, 131, 176);
+    }
+    20%{
+        color: rgb(144, 120, 252);
+    }
+}
+@keyframes run3{
+    60%{
+        color: rgb(63, 240, 231);
+    }
+    80%{
+        color: rgb(211, 248, 78);
+    }
+    100%{
+        color: rgb(243, 94, 211);
+    }
+    20%{
+        color: rgb(250, 131, 176);
+    }
+    40%{
+        color: rgb(144, 120, 252);
+    }
+}
+@keyframes run4{
+    80%{
+        color: rgb(63, 240, 231);
+    }
+    100%{
+        color: rgb(211, 248, 78);
+    }
+    20%{
+        color: rgb(243, 94, 211);
+    }
+    40%{
+        color: rgb(250, 131, 176);
+    }
+    60%{
+        color: rgb(144, 120, 252);
+    }
+}
+@keyframes run5{
+    100%{
+        color: rgb(63, 240, 231);
+    }
+    20%{
+        color: rgb(211, 248, 78);
+    }
+    40%{
+        color: rgb(243, 94, 211);
+    }
+    60%{
+        color: rgb(250, 131, 176);
+    }
+    80%{
+        color: rgb(144, 120, 252);
+    }
+}
