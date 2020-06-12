@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (isset($_POST['key']) && isset($_POST['url']) && isset($_POST['dir']) && isset($_POST['code'])) {
     if (!(empty($_POST['key']) && empty($_POST['url']) && empty($_POST['dir']) && empty($_POST['code']))) {
         $mark = $_POST['key'];
@@ -12,6 +13,8 @@ if (isset($_POST['key']) && isset($_POST['url']) && isset($_POST['dir']) && isse
         $str = str_replace('$toc', '"' . $toc . '"', $str);
         mkdir($code);
         file_put_contents($code . '/test.php', $str);
+        $_SESSION['success'] = 'yesxjgg';
+        header('location:main.php');
     } else {
         $_SESSION['error'] = '请先登陆';
         header('location:index.php');

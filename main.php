@@ -49,6 +49,13 @@ if (!(isset($_SESSION['success']) && !empty($_SESSION['success']))) {
             </article>
         </main>
     </body>
+    <script>
+        <?php
+        if ($_SESSION['success'] == 'yesxjgg') {
+            echo 'alert("项目生成成功！")';
+        }
+        ?>
+    </script>
 
     </html>
 <?php
